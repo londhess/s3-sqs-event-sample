@@ -1,7 +1,5 @@
 
-# Welcome to your CDK Python project!
-
-This is a blank project for Python development with CDK.
+# Welcome to S3 SQS Event Sample Project using AWS CDK!
 
 The `cdk.json` file tells the CDK Toolkit how to execute your app.
 
@@ -43,9 +41,23 @@ At this point you can now synthesize the CloudFormation template for this code.
 $ cdk synth
 ```
 
+Above command generate the CloudFormation template in YAML format. The templates describes aws resources and underline policies aws will create.
+
 To add additional dependencies, for example other CDK libraries, just add
 them to your `setup.py` file and rerun the `pip install -r requirements.txt`
 command.
+
+To create the resources in AWS, run below command in terminal. This will create the resources in AWS.
+
+```
+$ cdk deploy
+```
+
+To delete all the resources, run below command.
+
+```
+$ cdk destroy
+```
 
 ## Useful commands
 
